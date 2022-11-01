@@ -4,7 +4,7 @@ import cartItems from "../../cartItems";
 
 const initialState = {
     cartItems: cartItems,
-    amount:1,
+    amount:4,
     total:0,
     isLoading:true,
 };
@@ -19,5 +19,5 @@ const cartSlice = createSlice({
     },
 });
 
-export const clearCart = cartSlice.actions;
+export const { clearCart } = cartSlice.actions;
 export default cartSlice.reducer;
